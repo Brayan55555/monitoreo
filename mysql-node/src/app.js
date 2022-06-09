@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, 'views'));
 // middlewares
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
-    host: '192.168.0.109',
+    host: '192.168.0.108',
     user: 'user',
     password: 'password',
     port: 3306,
