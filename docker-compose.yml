@@ -66,4 +66,4 @@ services:
   api-todo:
     build: mysql-node/
     ports:
-      - 3100:8080
+      - 3100:3100
