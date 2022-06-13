@@ -9,7 +9,7 @@ const app = express();
 const customerRoutes = require('./routes/customer');
 
 //settings
-app.set('port', process.env.PORT || 3100);
+app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
     host: '192.168.0.108',
-    user: 'user',
+    user: 'root',
     password: 'password',
     port: 3306,
     database: 'db'
