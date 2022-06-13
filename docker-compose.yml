@@ -56,7 +56,7 @@ services:
     container_name: cadvisor
     restart: unless-stopped
     expose:
-    - 8080
+    - 3100
     volumes:
     - /:/rootfs:ro
     - /var/run:/var/run:rw
