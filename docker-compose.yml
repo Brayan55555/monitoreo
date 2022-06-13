@@ -65,5 +65,7 @@ services:
 
   api-todo:
     build: mysql-node/
+    container_name: api-todo
+    restart: unless-stopped
     ports:
       - 3100:3100
