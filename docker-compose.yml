@@ -56,7 +56,7 @@ services:
     container_name: cadvisor
     restart: unless-stopped
     expose:
-    - 3100
+    - 8080
     volumes:
     - /:/rootfs:ro
     - /var/run:/var/run:rw
@@ -66,4 +66,4 @@ services:
   api-todo:
     build: mysql-node/
     ports:
-      - 3100:3100
+      - 3100:8080
